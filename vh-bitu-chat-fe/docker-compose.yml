@@ -1,0 +1,11 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vh-bitu-frontend
+    container_name: vh-bitu-frontend
+    restart: always
+    ports:
+      - '5001:5000'
